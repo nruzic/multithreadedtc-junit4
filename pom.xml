@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 2007, University of Maryland -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
@@ -29,13 +30,17 @@
         </license>
     </licenses>
 
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.6</version>
-        </dependency>
-    </dependencies>
+    <developers>
+        <developer>
+            <id>nruzic</id>
+            <name>Nikola Ruzic</name>
+            <email>nikola.ruzic.dev@gmail.com</email>
+            <url>https://github.com/nruzic</url>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
+    </developers>
 
     <build>
         <pluginManagement>
@@ -43,7 +48,7 @@
                 <plugin>
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <configuration>
-                        <source>8</source>
+                        <doclint>none</doclint>
                     </configuration>
                 </plugin>
             </plugins>
@@ -175,6 +180,14 @@
             </plugin>
         </plugins>
     </reporting>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.6</version>
+        </dependency>
+    </dependencies>
 
 </project>
 
