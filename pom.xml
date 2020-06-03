@@ -15,7 +15,7 @@
     <artifactId>multithreadedtc-junit4</artifactId>
     <version>1.0.2-SNAPSHOT</version>
     <name>MultithreadedTC</name>
-    <url>http://code.google.com/p/multithreadedtc-junit4/</url>
+    <url>http://github.com/nruzic/multithreadedtc-junit4</url>
 
     <properties>
         <checkstyle.failOnViolation>false</checkstyle.failOnViolation>
@@ -29,6 +29,12 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
+    <scm>
+        <url>http://github.com/nruzic/multithreadedtc-junit4</url>
+        <connection>scm:git:git@github.com:nruzic/multithreadedtc-junit4.git</connection>
+        <developerConnection>scm:git:git@github.com:nruzic/multithreadedtc-junit4.git</developerConnection>
+    </scm>
 
     <developers>
         <developer>
