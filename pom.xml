@@ -13,7 +13,7 @@
 
     <groupId>com.github.nruzic</groupId>
     <artifactId>multithreadedtc-junit4</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.2-SNAPSHOT</version>
     <name>MultithreadedTC</name>
     <url>http://code.google.com/p/multithreadedtc-junit4/</url>
 
