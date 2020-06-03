@@ -686,8 +686,10 @@ public class RunThreadsThenInvokeMethod extends InvokeMethod {
 		StackTraceElement[] stackTrace = t.getStackTrace();
 		if (stackTrace != null)
 		    assertionError.setStackTrace(stackTrace);
-		if (t.isAlive())
-		    t.stop(assertionError);
+		if (t.isAlive()) {
+		    t.stop();
+		    System.err.println(assertionError);;
+		}
 	    }
     }
 
