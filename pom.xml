@@ -99,68 +99,6 @@
         </plugins>
     </build>
 
-    <reporting>
-        <plugins>
-            <plugin>
-                <artifactId>maven-surefire-report-plugin</artifactId>
-                <version>3.0.0-M4</version>
-                <configuration>
-                    <linkXRef>true</linkXRef>
-          <!-- only show failure: -->
-                    <showSuccess>false</showSuccess>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>jxr-maven-plugin</artifactId>
-                <version>2.0-beta-1</version>
-            </plugin>
-            <plugin>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>3.1.1</version>
-                <configuration>
-          <!--<configLocation>XVSM_Checkstyle.xml</configLocation>-->
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.2.0</version>
-                <configuration>
-                    <doclet>
-                        gr.spinellis.umlgraph.doclet.UmlGraphDoc
-                    </doclet>
-                    <docletArtifact>
-                        <groupId>gr.spinellis</groupId>
-                        <artifactId>UmlGraph</artifactId>
-                        <version>4.4</version>
-                    </docletArtifact>
-                    <additionalparam>
-                        -qualify -inferrel -quiet -hide java.*
-                        -postfixpackage -nodefontsize 9
-                        -nodefontpackagesize 7
-                    </additionalparam>
-                    <destDir>docs/api</destDir>
-                    <jarOutputDirectory>
-                        target/site/download
-                    </jarOutputDirectory>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>taglist-maven-plugin</artifactId>
-                <version>2.4</version>
-                <configuration>
-                    <tags>
-                        <tag>TODO</tag>
-                        <tag>FIXME</tag>
-                        <tag>OPTIMIZE</tag>
-                        <tag>@deprecated</tag>
-                    </tags>
-                </configuration>
-            </plugin>
-        </plugins>
-    </reporting>
-
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
