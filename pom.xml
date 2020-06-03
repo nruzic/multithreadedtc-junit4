@@ -5,8 +5,8 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.nruzic</groupId>
-  <artifactId>multithreadedtc</artifactId>
-  <version>1.01-junit4</version>
+  <artifactId>multithreadedtc-junit4</artifactId>
+  <version>1.0.2</version>
   <name>MultithreadedTC</name>
   <url>http://code.google.com/p/multithreadedtc-junit4/</url>
 
