@@ -17,6 +17,8 @@ pom.xml.next
 .project
 .classpath
 .checkstyle
+.factorypath
+.sts4-cache/
 bin/
 
 # Log artifacts
@@ -26,6 +28,8 @@ bin/
 # Idea artifacts
 .idea/
 **/*.iml
+.gitkeep
 
 # Other
 .*_backup
+.attach_pid*
